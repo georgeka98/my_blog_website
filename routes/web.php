@@ -11,6 +11,46 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// // Route::get('/resume', function () {
+// //     return view('pages.resume');
+// // });
+
+// Route::get('/hyped', function () {
+//     return view('hyped');
+// });
+
+// Route::get('/augement_bionics', function () {
+//     return view('augement_bionics');
+// });
+
+// Route::get('/cabochon_games', function () {
+//     return view('cabochon_games');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.welcome');
 });
+
+// Route::get('/resume', function () {
+//     return view('pages.resume');
+// });
+
+Route::get('/hyped', function () {
+    return view('pages.hyped');
+});
+
+Route::get('/augement_bionics', function () {
+    return view('pages.augement_bionics');
+});
+
+Route::get('/cabochon_games', function () {
+    return view('pages.cabochon_games');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

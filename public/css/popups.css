@@ -1,0 +1,59 @@
+#welcome{
+    position: fixed;
+    top: auto;
+    z-index: 9997;
+    max-width: 400px;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+}
+
+#welcome p{
+    font-size: 14px;
+    margin: 0px;
+    line-height: 22px;
+}
+
+#welcome .close_welcome{
+    height: 32px;
+}
+
+#welcome h2{
+    text-align: center;
+}
+
+#welcome .close_btn{
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close_btn {
+    position: absolute;
+    right: 10px;
+    /* top: 32px; */
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close_btn:hover {
+    opacity: 1;
+  }
+  .close_btn:before, .close_btn:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close_btn:before {
+    transform: rotate(45deg);
+  }
+  .close_btn:after {
+    transform: rotate(-45deg);
+  }
