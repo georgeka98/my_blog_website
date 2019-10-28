@@ -148,6 +148,12 @@
                     </div>
                 </div>
             </div>
+            <h3>Personal work</h3>
+            <p>What do I do in my spare time? I love doing individual work to improve my skills in a particular area.</p>
+            <div class="container personal_work">
+                <h3>Artwork</h3>
+                <p>I enjoy creating artwork and animations, mainly when when it comes to video game design and creating designs of how a project may roughly look like at the end of its production. Click <a href="artwork">here</a> to see my designs!</p>
+            </div>
             <h3>Experience</h3>
             <p>How well am I trained? Below you may see my abilities and technical skills.</p>
             <div class="container group-experience">

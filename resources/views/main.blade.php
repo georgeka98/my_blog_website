@@ -31,6 +31,10 @@
             <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
         {{-- @endif --}}
 
+        @if (\Request::is('artwork'))
+            <link href="{{ asset('css/artwork.css') }}" rel="stylesheet">
+        @endif
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134171996-1"></script>
         <script>
@@ -76,9 +80,9 @@
                 text-align: center;
             }
 
-            .title {
+            /* .title {
                 font-size: 84px;
-            }
+            } */
 
             .links > a {
                 color: #636b6f;
@@ -200,6 +204,9 @@
                             @elseif (\Request::is('augement_bionics'))
                                 <h1 class="full-name">Augement Bionics</h1>
                                 <h6 class="welcome-subtitle-teaser">Producing the cheapest bionic arm!</h6>
+                            @elseif (\Request::is('artwork'))
+                                <h1 class="full-name">Design portfolio</h1>
+                                <h6 class="welcome-subtitle-teaser">“Every artist was first an amateur“ - Ralph Waldo Emerson</h6>
                             @endif
                             <ul class="social">
                                 <li>

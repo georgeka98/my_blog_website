@@ -51,6 +51,10 @@ Route::get('/cabochon_games', function () {
     return view('pages.cabochon_games');
 });
 
+Route::get('/artwork', function () {
+    return view('pages.artwork');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
