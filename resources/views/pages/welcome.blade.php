@@ -2,6 +2,45 @@
 
 @section('content')
 
+@if(Session::has('success') || $errors->any())
+    <script>
+      $(function() {
+          $('#myModal').modal('show');
+      });
+    </script>
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"> 
+              @if(Session::has('success')) 
+                Thank you 
+              @else 
+                Notice
+              @endif
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            @if(Session::has('success')) 
+              <p>{{Session::get('success')}}</p>
+            @else 
+              {{-- {{$errors->all()}} --}}
+              @foreach($errors->all() as $error)
+                <p>{{$error}}</p>
+              @endforeach
+            @endif
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  @endif
+
         <div class="about-section jumbotron">
             <h1>Get to know me!</h1>
             <p>I'm a half Greek, British student, currently living in Edinburgh, UK. I was born in London, UK from Greek parents. At 4, me and my parents moved back to Athens, Greece to be closer to my rest of my family members, where I stayed for 13 years, untill we moved back to the UK to finish my education and study at a top and prestigious university which happened to be at the University Of Edinburgh due to my attraction and love for the Scottish culture. 

@@ -31,6 +31,19 @@
 //     return view('cabochon_games');
 // });
 
+
+Route::group(['middleware' => ['web']], function (){
+
+    Route::group(['domain' => 'covid19reachout.lvh.me'], function(){
+        
+        Route::get('/', ["uses" => "Covid19problemsController@create", 'as' => "covid19reachout.welcome"]);
+
+        Route::post('submit_issue', ["uses" => "Covid19problemsController@store", 'as' => "covid19issue.store"]);
+    
+    });
+
+});
+
 Route::get('/', function () {
     return view('pages.welcome');
 });
