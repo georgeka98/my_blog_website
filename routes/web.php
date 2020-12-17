@@ -64,6 +64,18 @@ Route::get('/cabochon_games', function () {
     return view('pages.cabochon_games');
 });
 
+Route::get('/covid19livespread', function () {
+    return view('pages.covid19livespread');
+});
+
+Route::get('/techlunar', function () {
+    return view('pages.techlunar');
+});
+
+Route::get('/project_protectus', function () {
+    return view('pages.project_protectus');
+});
+
 Route::get('/artwork', function () {
     return view('pages.artwork');
 });

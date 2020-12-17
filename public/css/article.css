@@ -1,0 +1,9 @@
+.lightbox_cont{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.img_canvas_bg{
+  z-index: 9999;
+}

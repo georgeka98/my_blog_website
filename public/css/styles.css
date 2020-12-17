@@ -47,7 +47,7 @@ body {
 }
 
 .navbar {
-  z-index: 9997;
+  z-index: 1000;
   padding: 1rem 1rem;
   opacity: 1.0;
   margin-top: 0px;
@@ -124,7 +124,7 @@ body {
 
 #mobile_side .brand {
   display: block;
-  text-align: center;
+  text-align: left;
   padding: 1rem;
   padding-left: 2rem;
 }
@@ -232,18 +232,18 @@ body {
 }
 
 .social {
-  margin: 0px;
-  padding: 0px;
+  margin: 0rem;
+  padding: 1rem;
 }
 
 .social li {
   display: inline-block;
 }
 
-.social li img {
-  height: 2rem;
-  width: 2rem;
-  margin: 0.5rem;
+.social a{
+  font-size: 2rem;
+  padding: 0.75rem;
+  color: #ffffff;
 }
 
 .pg-canvas {

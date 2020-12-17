@@ -1,19 +1,18 @@
 @extends('main')
 
 @section('content')
-        <div class="about-section jumbotron article">
-            {{-- <h1>A Galactic game. </h1>
-            <p>Describe</p> --}}
-            <h1 style="text-align: center">Your Skills will be Strained</h1>
-            <p>My facination of games, started from a very young age, specifically at 4.</p>
+        <div class="about-section jumbotron">
+            {{-- <h1>What do I do in HypEd?</h1>
+            <p>My main job is to (explain, explain, explain)</p>
+            <p>(add some photos and explain your position further)</p> --}}
+            <h1 style="text-align:center">Joining the Efforts to Slow the Spread!</h1>
+            <p>I was looking forward to be part in the efforts to help during the pandemic crisis.</p>
 
-            <p>While I was practicing with 3D modeling as well as the Unity 3D game engine, I was approached by a Discord team on a Facebook Group with an invitation to join as an artist. I happily accepted.</p>
+            <p>While I took part in a Hackathon, I came up with the idea of producing a website called <a href="https://project-protectus.com/">Project-protectUs</a> which alow 3D printer enthusiasts to visit the website and print the PPE designs which would be listed there and ship them to hospitals at a very low cost.</p>
 
-            <p>While I was part in the team of 9 members, I met people from around the globe. Everyone had different skillsets while I took the role of a 3D artist.</p>
+            <p>While it was nota very successful project due to lots of regulations as well as the pandemic was seemed to end during the summer, I joined another hackathon under the name of "Hack 4 The People" with an enthusiastic team to build an app which will help you stay more protected whiile going out.</p>
 
-            <p>The project ended up being more of a hobby than a primary job, so we all were volunteers and working on the project in our spare time. During the time, I managed to create a human character as well as ammo boxes, however the project has been quiet for the last year.</p>
-
-            <p>Of course, this sparked a small interest in game development, specifically for mobile phones, which I am also keen to spend my spare time to build small games.</p>
+            <p>Me and my new team are planning to use Project-protectUs to provide PPE for countries in Africa.</p>
 
             <div class="row">
 
@@ -27,27 +26,24 @@
                 </div> --}}
                 <!-- Grid column -->
               
-              </div>
-              <!-- Grid row -->
-              
-              <!-- Grid row -->
-              <div class="gallery" id="gallery">
+            </div>
+            <!-- Grid row -->
+            
+            <!-- Grid row -->
+            <div class="gallery" id="gallery">
               
                 <!-- Grid column -->
                 <div class="mb-3 pics animation all 2">
-                  <img class="img-fluid" src="{{ asset('images/projects/2/1.png') }}" alt="Card image cap">
+                  <img class="img-fluid" src="{{ asset('images/projects/3/1.png') }}" alt="Card image cap">
                 </div>
                 <!-- Grid column -->
               
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 1">
-                  <img class="img-fluid" src="{{ asset('images/projects/2/2.png') }}" alt="Card image cap">
-                </div>
-                <!-- Grid column -->
+                
               
               </div>
               <!-- Grid row -->
-                    </div>
+            </div>
+
         </div>
     </div>
 

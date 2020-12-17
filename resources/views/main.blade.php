@@ -16,14 +16,13 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <link href="{{ asset('css/popups.css') }}" rel="stylesheet">
-
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/project.css') }}" rel="stylesheet">
 
         <!-- loader -->
 
@@ -107,8 +106,23 @@
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+        <link href="{{ asset('css/article.css') }}" rel="stylesheet">
+
     </head>
     <body>
+
+        {{-- <div class="lightbox_cont">
+            <div class="lightbox_center">
+                <div class="lightbox_exit">
+                    x
+                </div>
+                <div class="img_canvas_bg">
+                    <img src="" alt="" class="img_canvas">
+                </div>
+            </div>
+        </div> --}}
 
         <div id="loader">
 			<div class="center" id="loader-ul">
@@ -122,18 +136,18 @@
 			</div>
         </div>
 
-        <div id="welcome">
+        {{-- <div id="welcome">
             <div class="close_welcome">
                 <span class="close_btn"></span>
             </div>
             <h2>Welcome!</h2>
             <p>You are among my first visitors! As you may see, my website is still not on its final shape and there are pleanty to do. Remember to visit me soon to see new updates!</p>
-        </div>
+        </div> --}}
 
         <div id="mobile_side">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="brand">
-                <img class="navbar-brand navbar-brand-sidebar" src="/images/gk-logo-w.png"/>
+                <img class="navbar-brand navbar-brand-sidebar" src="{{ asset("/images/gk-logo-w.png")}}"/>
             </div>
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -164,8 +178,8 @@
             <div class="content">
                 <nav class="navbar navbar-expand-xs navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-dark">
                     <!-- <a  class="navbar-brand">Academind</a> -->
-                    <a href="/"><img class="navbar-brand"  src="/images/gk-logo-w.png"/></a>
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <a href="/"><img class="navbar-brand" src="{{ asset("/images/gk-logo-w.png")}}"/></a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="">
                         <span class="navbar-toggler-icon" onclick="openNav()"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarMenu">
@@ -197,7 +211,9 @@
                             @if (Request::is('/'))
                                 <h6 class="welcome">Hi stranger! I'm</h6>
                                 <h1 class="full-name">George Karabassis</h1>
-                                <h6 class="welcome-subtitle-teaser">Thank you for stopping by! </h6>   
+                                <h6 class="welcome-subtitle-teaser">Thank you for stopping by! </h6> 
+                            @include("includes._social")
+
                             @elseif (\Request::is('hyped'))
                                 <h1 class="full-name">HypEd</h1>
                                 <h6 class="welcome-subtitle-teaser">The future of transportation! </h6>
@@ -207,29 +223,29 @@
                             @elseif (\Request::is('augement_bionics'))
                                 <h1 class="full-name">Augement Bionics</h1>
                                 <h6 class="welcome-subtitle-teaser">Producing the cheapest bionic arm!</h6>
+                            @elseif (\Request::is('covid19livespread'))
+                                <h1 class="full-name">Covid19LiveSpread</h1>
+                                <h6 class="welcome-subtitle-teaser">The Complete COVID-19 Dashboard!</h6>
+                            @elseif (\Request::is('project_protectus'))
+                                <h1 class="full-name">Project ProtectUs</h1>
+                                <h6 class="welcome-subtitle-teaser">Joining the Efforts to Slow the Spread!</h6>
+                            @elseif (\Request::is('techlunar'))
+                                <h1 class="full-name">TechLunar</h1>
+                                <h6 class="welcome-subtitle-teaser">Sharing my Technical Knowledge!</h6>
                             @elseif (\Request::is('artwork'))
                                 <h1 class="full-name">Design portfolio</h1>
                                 <h6 class="welcome-subtitle-teaser">“Every artist was first an amateur“ - Ralph Waldo Emerson</h6>
                             @endif
-                            <ul class="social">
-                                <li>
-                                    <a href="https://www.linkedin.com/in/george-karabassis-60487b156/" target="_blank" class="linkedin">
-                                        <img src="/images/soc-med/linkedin.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.behance.net/georgek98171b0" target="_blank" class="behance">
-                                        <img src="/images/soc-med/behance.png" alt="">
-                                    </a>
-                                </li>
-                            </ul>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        @yield('content')
+        <div class="about-section jumbotron article">
+            @yield('content')
+        </div>
 
         @yield("other_projects")
 
@@ -287,25 +303,21 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="social">
-                    <li>
-                        <a href="https://www.linkedin.com/in/george-karabassis-60487b156/" target="_blank" class="linkedin">
-                            <img src="/images/soc-med/linkedin.png" alt="">
-                        </a>
-                    </li><li>
-                        <a href="https://www.behance.net/georgek98171b0" target="_blank" class="behance">
-                            <img src="/images/soc-med/behance.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-                <p class="copyright">© 2018 George Karabassis. All rights reserved.</p>
+                
+                @include("includes._social")
+
+                <p class="copyright">© {{date("Y")}} George Karabassis. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="{{ asset('js/network_anim.js') }}"></script>
     <script src="{{ asset('js/appear_effect.js') }}"></script>
     <script src="{{ asset('js/popups.js') }}"></script>
+    <script src="{{ asset('js/article.js') }}"></script>
+    <script src="{{ asset('js/mobile_nav.js') }}"></script>
+
     @if (Request::is('/'))
         <script src="{{ asset('js/script.js') }}"></script>
         {{-- <script src="{{ asset('js/life_timeline.js') }}"></script> --}}

@@ -185,6 +185,32 @@
                             </a>
                         </div>
                     </div>
+                    <div class="project col-md-4 col-lg-4 col-xl-4">
+                        <div class="project-inner">
+                            <a href="project_protectus">
+                                <div class="overlay entry-content flex flex-column align-items-center justify-content-center">
+                                    <div class="annotation">
+                                        <p>Combining forces to help lives. Helping Hospitals by providing efficient PPE's</p>
+                                        <p class="see-more">Click me to learn more!</p>
+                                    </div>
+                                </div>
+                                <img src="{{ asset('images/project_protectus.png') }}" alt="Project ProtectUs">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project col-md-4 col-lg-4 col-xl-4">
+                        <div class="project-inner">
+                            <a href="covid19livespread">
+                                <div class="overlay entry-content flex flex-column align-items-center justify-content-center">
+                                    <div class="annotation">
+                                        <p>Creating the ultimate COVID-19 statistic dashboard</p>
+                                        <p class="see-more">Click me to learn more!</p>
+                                    </div>
+                                </div>
+                                <img src="{{ asset('images/covid19livespread.png') }}" alt="Covid19LiveSpread">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <h3>Personal work</h3>

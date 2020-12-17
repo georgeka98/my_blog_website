@@ -1,59 +1,82 @@
 @extends('main')
 
 @section('content')
-        <div class="about-section jumbotron article">
-            {{-- <h1>A Galactic game. </h1>
+        <div class="about-section jumbotron">
+            {{-- <h1>!</h1>
             <p>Describe</p> --}}
-            <h1 style="text-align: center">Your Skills will be Strained</h1>
-            <p>My facination of games, started from a very young age, specifically at 4.</p>
+            <h1 style="text-align:center">All in One</h1>
+            <p>I found it very difficult to find detailed coronavirus information per area.</p>
 
-            <p>While I was practicing with 3D modeling as well as the Unity 3D game engine, I was approached by a Discord team on a Facebook Group with an invitation to join as an artist. I happily accepted.</p>
+            <p>The idea of creating <a href="https://covid19livespread.com/">covid19livespread</a> came from the difficulty of finding COVID-19 statistics in the  area I was currently living in (Edinburgh). I remember having discussions with others and asking "how many cases are in Edinburgh?". They had no idea, untill I dig up the internet and found them after lots of research. I realised that if I could do the heavy work, of finding the data of multiple areas from multiple countries arounf the world and put them in one place would be extremely beneficial to have everything well stru tured and organized.</p>
 
-            <p>While I was part in the team of 9 members, I met people from around the globe. Everyone had different skillsets while I took the role of a 3D artist.</p>
+            <p>So I started developing the website at the 6th of May 2020. While working on it, I had 0 experience with using modern front-end and back-end technologies such as node.js, express.js and mongoDB, but I decided to build the website and learn on-the-way. After pullling entire days of work, I finished the website within 3 weeks. People loved the website, and even the department of the School of Informatics, <a href="https://www.ed.ac.uk/informatics/news-events/stories/2020/george-karabassis-covid-tracking-website" target="_blank">wrote an article</a> on their official website.</p>
 
-            <p>The project ended up being more of a hobby than a primary job, so we all were volunteers and working on the project in our spare time. During the time, I managed to create a human character as well as ammo boxes, however the project has been quiet for the last year.</p>
+            <p>Of course building software fast comes at a cost. I skipped the design and analysis stage which came to a massive cost. I had to keep the website up to date by adding more countries and maintain the website. With lots of "spaghetti code", I had no choice but (almost) re-write the whole thing and so I did! I managed to make the website a lot more stable, faster and more accessible.</p>
 
-            <p>Of course, this sparked a small interest in game development, specifically for mobile phones, which I am also keen to spend my spare time to build small games.</p>
+            <p>Now the website is far from perfect and I still want to make it better and better. So I am currently working on a V2.0 which will come with a brand new design and more features and will become more "mobile friendly". So, why don't you explore <a href="https://covid19livespread.com/">covid19livespread</a>? Going out is estremely useful for our mental health, so keeping track on how many COVID-19 cases there are in your area will certainly give you an insight of what's going on in your area than searching and searching the news. Bookmark the website and with one click you can get the statistics!</p>
 
-            <div class="row">
+            <!-- Grid row -->
+<div class="row">
 
-                <!-- Grid column -->
-                {{-- <div class="col-md-12 d-flex justify-content-center mb-5">
-              
-                  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
-                  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Mountains</button>
-                  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Sea</button>
-              
-                </div> --}}
-                <!-- Grid column -->
-              
-              </div>
-              <!-- Grid row -->
-              
-              <!-- Grid row -->
-              <div class="gallery" id="gallery">
-              
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 2">
-                  <img class="img-fluid" src="{{ asset('images/projects/2/1.png') }}" alt="Card image cap">
-                </div>
-                <!-- Grid column -->
-              
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 1">
-                  <img class="img-fluid" src="{{ asset('images/projects/2/2.png') }}" alt="Card image cap">
-                </div>
-                <!-- Grid column -->
-              
-              </div>
-              <!-- Grid row -->
-                    </div>
-        </div>
+    <!-- Grid column -->
+    {{-- <div class="col-md-12 d-flex justify-content-center mb-5">
+  
+      <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+      <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Mountains</button>
+      <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Sea</button>
+  
+    </div> --}}
+    <!-- Grid column -->
+  
+  </div>
+  <!-- Grid row -->
+  
+  <!-- Grid row -->
+  <div class="gallery" id="gallery">
+  
+    <!-- Grid column -->
+    <div class="mb-3 pics animation all 2">
+      <img class="img-fluid" src="{{ asset('images/projects/1/1.png') }}" alt="Card image cap">
     </div>
+    <!-- Grid column -->
+  
+    <!-- Grid column -->
+    <div class="mb-3 pics animation all 1">
+      <img class="img-fluid" src="{{ asset('images/projects/1/2.png') }}" alt="Card image cap">
+    </div>
+    <!-- Grid column -->
+  
+    <!-- Grid column -->
+    <div class="mb-3 pics animation all 1">
+      <img class="img-fluid" src="{{ asset('images/projects/1/3.png') }}" alt="Card image cap">
+    </div>
+    <!-- Grid column -->
+  
+    <!-- Grid column -->
+    <div class="mb-3 pics animation all 2">
+      <img class="img-fluid" src="{{ asset('images/projects/1/4.png') }}" alt="Card image cap">
+    </div>
+    <!-- Grid column -->
+  
+    <!-- Grid column -->
+    <div class="mb-3 pics animation all 2">
+      <img class="img-fluid" src="{{ asset('images/projects/1/5.png') }}" alt="Card image cap">
+    </div>
+    <!-- Grid column -->
+  
+    <!-- Grid column -->
+    <div class="mb-3 pics animation all 1">
+      <img class="img-fluid" src="{{ asset('images/projects/1/6.png') }}" alt="Card image cap">
+    </div>
+    <!-- Grid column -->
+  
+  </div>
+  <!-- Grid row -->
+</div>
 
-    @endsection
-    
-    @section('other_projects')
+@endsection
+
+@section('other_projects')
         <div class="portfolio-section jumbotron">
                 <h1>I have more work!</h1>
                 <p>Did you like this project? Why not check out my other projects?</p>
