@@ -140,6 +140,11 @@
             </div>
         </div>
 
+    </div>
+
+    @endsection
+    
+    @section('other_projects')
         <div class="portfolio-section jumbotron">
             <h1>Portfolio</h1>
             <p>Working on numerus projects, allowed me to expand my horizons and discover new areas which I never thought I would enjoy. I participated in many team projects, with purpose to develop my communication and team-working skills, but also solo projects, with goal to improve my skills.</p>

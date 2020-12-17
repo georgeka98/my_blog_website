@@ -334,7 +334,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   right: -6.8125rem;
-  z-index: 1000;
+  z-index: 999;
 }
 .timeline_wrapper .entries .entry .title.big:before {
   width: 24px;
@@ -408,7 +408,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9996;
+  z-index: 999;
 }
 
 .overlay .annotation {
