@@ -24,6 +24,8 @@
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
         <link href="{{ asset('css/project.css') }}" rel="stylesheet">
 
+        <link rel="canonical" href="{{ config('app.url') }}/">
+
         <!-- loader -->
 
         {{-- @if (\Request::is('/')) --}}
