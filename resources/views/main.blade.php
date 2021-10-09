@@ -49,11 +49,11 @@
 
         <style>
             html, body {
-                background-color: #fff;
+                background-color: #e9ecef;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                height: 100vh;
+                /* height: 100vh; */
                 margin: 0;
             }
 
@@ -165,7 +165,7 @@
                     <a class="blog_nav nav-link"  >BLOG</a>
                 </li>
                 <li class="nav-item">
-                    <a class="resume_nav nav-link" href="https://drive.google.com/file/d/1eBc9Tq6q0FRxDQIIjd4yrtbPIemCxlQq/view" >RESUME</a>
+                    <a class="resume_nav nav-link" href="https://drive.google.com/file/d/1RlS1kDUt7F54zcYUfYdgvjO5_BLaDzO_/view" >RESUME</a>
                 </li>
                 <li class="nav-item">
                     <a class="contact_nav nav-link"  >CONTACT</a>
@@ -199,7 +199,7 @@
                                 <a class="blog_nav nav-link"  ><p>BLOG</p></a>
                             </li>
                             <li class="nav-item">
-                                <a class="resume_nav nav-link" href="https://drive.google.com/file/d/1eBc9Tq6q0FRxDQIIjd4yrtbPIemCxlQq/view" ><p>RESUME</p></a>
+                                <a class="resume_nav nav-link" href="https://drive.google.com/file/d/1RlS1kDUt7F54zcYUfYdgvjO5_BLaDzO_/view" ><p>RESUME</p></a>
                             </li>
                             <li class="nav-item">
                                 <a class="contact_nav nav-link"  ><p>CONTACT</p></a>
@@ -225,9 +225,18 @@
                             @elseif (\Request::is('augement_bionics'))
                                 <h1 class="full-name">Augement Bionics</h1>
                                 <h6 class="welcome-subtitle-teaser">Producing the cheapest bionic arm!</h6>
-                            @elseif (\Request::is('covid19livespread'))
-                                <h1 class="full-name">Covid19LiveSpread</h1>
+                            @elseif (\Request::is('ncovtrack'))
+                                <h1 class="full-name">NCovTrack</h1>
                                 <h6 class="welcome-subtitle-teaser">The Complete COVID-19 Dashboard!</h6>
+                            @elseif (\Request::is('maskit'))
+                                <h1 class="full-name">MaskIt</h1>
+                                <h6 class="welcome-subtitle-teaser">Picking the right mask!</h6>
+                                <ul class="social">
+                                    </li>
+                                        <a href="https://play.google.com/store/apps/details?id=com.maskit" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; font-size: 1.75rem">Download From Google Play Store</a>
+                                    </li>
+                                  
+                                  </ul>
                             @elseif (\Request::is('project_protectus'))
                                 <h1 class="full-name">Project ProtectUs</h1>
                                 <h6 class="welcome-subtitle-teaser">Joining the Efforts to Slow the Spread!</h6>
@@ -245,11 +254,127 @@
             </div>
         </div>
 
-        <div class="about-section jumbotron article">
-            @yield('content')
+        <div class="container">
+
+            <div class="about-section jumbotron article">
+                @yield('content')
+            @if (!(\Request::is('/')))
+                </div>
+            @endif
+
+    
+            <div class="portfolio-section jumbotron">
+
+                @if ((\Request::is('/')))
+                    <h1>Portfolio</h1>
+                    <p>Working on numerus projects, allowed me to expand my horizons and discover new areas which I never thought I would enjoy. I participated in many team projects, with purpose to develop my communication and team-working skills, but also solo projects, with goal to improve my skills.</p>
+                    <h2>Projects/Work</h2>
+                @else
+
+                    <h1>I have more work!</h1>
+                    <p>Did you like this project? Why not check out my other projects?</p>
+                @endif
+
+                <div class=" group-projects">
+                    <div class="row justify-content-md-center">
+                        @if (!(\Request::is('hyped')))
+                            <div class="project col-md-4 col-lg-4 col-xl-4">
+                                <div class="project-inner">
+                                    <a href="hyped">
+                                        <div class="overlay entry-content flex flex-column align-items-center justify-content-center">
+                                            <div class="annotation">
+                                                <p>A student sosciety - lead project based at the University of Edinburgh focusing on the development of Hyperloop.</p>
+                                                <p class="see-more">Click me to learn more!</p>
+                                            </div>
+                                        </div>
+                                        <img src="{{ asset('images/hyped.jpeg') }}" alt="Hyped">
+                                    </a>
+                                </div>
+                            </div>
+                        @endif
+                        @if (!(\Request::is('augement_bionics')))
+                            <div class="project col-md-4 col-lg-4 col-xl-4">
+                                <div class="project-inner">
+                                    <a href="augement_bionics">
+                                        <div class="overlay entry-content flex flex-column align-items-center justify-content-center">
+                                            <div class="annotation">
+                                                <p>A student lead project based at the University of Edinburgh focusing on the development of very cheap prosthesis for amputees.</p>
+                                                <p class="see-more">Click me to learn more!</p>
+                                            </div>
+                                        </div>
+                                        <img src="{{ asset('images/augement-bionics.png') }}" alt="Hyped">
+                                    </a>
+                                </div>
+                            </div>
+                        @endif
+                        @if (!(\Request::is('cabochon_games')))
+                            <div class="project col-md-4 col-lg-4 col-xl-4">
+                                <div class="project-inner">
+                                    <a href="cabochon_games">
+                                        <div class="overlay entry-content flex flex-column align-items-center justify-content-center">
+                                            <div class="annotation">
+                                                <p>An online project with volunteers from all around the globe, focusing on developing a galactic-type game.</p>
+                                                <p class="see-more">Click me to learn more!</p>
+                                            </div>
+                                        </div>
+                                        <img src="{{ asset('images/cabochon-games.jpg') }}" alt="Hyped">
+                                    </a>
+                                </div>
+                            </div>
+                        @endif
+                        @if (!(\Request::is('project_protectus')))
+                            <div class="project col-md-4 col-lg-4 col-xl-4">
+                                <div class="project-inner">
+                                    <a href="project_protectus">
+                                        <div class="overlay entry-content flex flex-column align-items-center justify-content-center">
+                                            <div class="annotation">
+                                                <p>Combining forces to help lives. Helping Hospitals by providing efficient PPE's</p>
+                                                <p class="see-more">Click me to learn more!</p>
+                                            </div>
+                                        </div>
+                                        <img src="{{ asset('images/project_protectus.png') }}" alt="Hyped">
+                                    </a>
+                                </div>
+                            </div>
+                        @endif
+                        @if (!(\Request::is('ncovtrack')))
+                            <div class="project col-md-4 col-lg-4 col-xl-4">
+                                <div class="project-inner">
+                                    <a href="ncovtrack">
+                                        <div class="overlay entry-content flex flex-column align-items-center justify-content-center">
+                                            <div class="annotation">
+                                                <p>Creating the ultimate COVID-19 & Vaccine statistic dashboard</p>
+                                                <p class="see-more">Click me to learn more!</p>
+                                            </div>
+                                        </div>
+                                        <img src="{{ asset('images/covid19livespread.png') }}" alt="Hyped">
+                                    </a>
+                                </div>
+                            </div>
+                        @endif
+                        @if (!(\Request::is('maskit')))
+                            <div class="project col-md-4 col-lg-4 col-xl-4">
+                                <div class="project-inner">
+                                    <a href="maskit">
+                                        <div class="overlay entry-content flex flex-column align-items-center justify-content-center">
+                                            <div class="annotation">
+                                                <p>Choose the right mask to minimize exposure to COVID-19 - Recognized by Google.</p>
+                                                <p class="see-more">Click me to learn more!</p>
+                                            </div>
+                                        </div>
+                                        <img src="{{ asset('images/maskit.png') }}" alt="Hyped">
+                                    </a>
+                                </div>
+                            </div>
+                        @endif
+                    </div>
+                </div>
+            </div>
+            
+                @yield("extra")
+
         </div>
 
-        @yield("other_projects")
 
         <div class="hit-me-up-section jumbotron">
             <h1>Hit me up!</h1>
@@ -298,7 +423,7 @@
                             <a class="blog_nav nav-link"  >BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="resume_nav nav-link" href="https://drive.google.com/file/d/1eBc9Tq6q0FRxDQIIjd4yrtbPIemCxlQq/view" target="_blank">RESUME</a>
+                            <a class="resume_nav nav-link" href="https://drive.google.com/file/d/1RlS1kDUt7F54zcYUfYdgvjO5_BLaDzO_/view" target="_blank">RESUME</a>
                         </li>
                         <li class="nav-item">
                             <a class="contact_nav nav-link"  >CONTACT</a>
@@ -308,7 +433,7 @@
                 
                 @include("includes._social")
 
-                <p class="copyright">© {{date("Y")}} George Karabassis. All rights reserved.</p>
+                <p class="copyright text-white">© {{date("Y")}} George Karabassis. All rights reserved.</p>
             </div>
         </div>
     </footer>

@@ -2,6 +2,15 @@
   width: 50%;
 }
 
+figure{
+  text-align: center;
+}
+
+figure img{
+  max-width: 800px!important;
+  width: 100%;
+}
+
 .gallery {
   -webkit-column-count: 3;
   -moz-column-count: 3;

@@ -9,7 +9,6 @@ function appear_effect(){
     var footer_els = document.getElementsByClassName("f-content")[0].children;
     var skills = document.getElementsByClassName("ability-row");
 
-    console.log(footer_els)
     for(var i = 0; i < boundings.length+skills.length; i++){
         if (footer_els.length > i){
             boundings.push(footer_els[i]);
@@ -32,6 +31,37 @@ function appear_effect(){
 
     //console.log(boundings)
     var navbar = [document.getElementsByClassName("intro-section")[0]]; 
+
+    // window.addEventListener("load", function(){
+    //     if(!visible(navbar[0])){
+    //         navbar[0].getElementsByClassName("navbar")[0].style.padding = "0.5rem";
+    //         navbar[0].getElementsByClassName("navbar")[0].style.opacity = "1.0";
+    //         navbar[0].getElementsByClassName("navbar")[0].style.position = "fixed";
+    //         navbar[0].getElementsByClassName("navbar")[0].style.width = "100%";
+    //         navbar[0].getElementsByClassName("navbar")[0].style.backgroundColor = "white";
+    //         navbar[0].getElementsByClassName("navbar")[0].style.marginTop = "0px";
+
+    //         navbar[0].getElementsByClassName("navbar")[0].classList.add("navbar-light");
+    //         navbar[0].getElementsByClassName("navbar")[0].classList.remove("navbar-dark");
+
+    //         for(var i = 0; i < navbar[0].getElementsByClassName("nav-link").length; i++)
+    //         {
+    //             navbar[0].getElementsByClassName("nav-link")[i].style.color = "black";
+    //             navbar[0].getElementsByClassName("nav-link")[i].style.paddingTop = "0rem";
+    //             navbar[0].getElementsByClassName("nav-link")[i].style.paddingBottom = "0rem";
+    //             navbar[0].getElementsByClassName("nav-link")[i].getElementsByTagName("P")[0].style.marginBottom = "0rem";
+    //         }
+
+    //         document.getElementsByClassName("intro-section")[0].getElementsByClassName("navbar-nav")[0].classList.add("hover-pink");
+    //         document.getElementsByClassName("intro-section")[0].getElementsByClassName("navbar-nav")[0].classList.remove("hover-w");
+
+    //         document.getElementsByClassName("intro-section")[0].getElementsByClassName("navbar-brand")[0].src = "/images/gk-logo-b.png";
+            
+    //         document.getElementsByClassName("intro-section")[0].getElementsByClassName("navbar-brand")[0].style.height = "2.5rem";
+    //         document.getElementsByClassName("intro-section")[0].getElementsByClassName("navbar-brand")[0].style.width = "2.5rem";
+
+    //     }
+    // });
 
     window.addEventListener("scroll", function(){
 
@@ -77,7 +107,6 @@ function appear_effect(){
             }
 
             else if (window.scrollY >= navbar[0].getElementsByClassName("navbar")[0].offsetHeight){
-                console.log(window.scrollY)
                 navbar[0].getElementsByClassName("navbar")[0].style.opacity = "0";
                 navbar[0].getElementsByClassName("navbar")[0].style.marginTop = "-15px";
                 navbar[0].getElementsByClassName("navbar")[0].style.backgroundColor = "transparent";
@@ -136,8 +165,8 @@ function visible(el){
         
         //console.log(top + el.offsetHeight/15,(window.pageYOffset + window.innerHeight), top + el.offsetHeight/15,(window.scrollY + window.innerHeight),bottom,(window.pageYOffset + window.innerHeight),bottom,(window.scrollY + window.innerHeight))
 
-        if((top + el.offsetHeight/15 < (window.pageYOffset + window.innerHeight) || top + el.offsetHeight/15 < (window.scrollY + window.innerHeight)) && 
-           (bottom + el.offsetHeight/15 > (window.pageYOffset + window.innerHeight) || bottom + el.offsetHeight/15 > (window.scrollY + window.innerHeight))){
+        if((top + el.offsetHeight/60 < (window.pageYOffset + window.innerHeight) || top + el.offsetHeight/60 < (window.scrollY + window.innerHeight)) && 
+           (bottom + el.offsetHeight/60 > (window.pageYOffset + window.innerHeight) || bottom + el.offsetHeight/60 > (window.scrollY + window.innerHeight))){
             return true;
         }
     }

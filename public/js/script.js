@@ -70,7 +70,7 @@ function greetings(){
                 update_greetings("हाय अजनबी! मैं हूँ", "जॉर्ज करबासीस", "रुकने के लिए धन्यवाद!", lang); //hindi
             }
             if (lang == 15){
-                update_greetings("مرحبا أيها الغريب! أنا", "جورج قرابيس", "شكرا لزيارتكم!", lang); //arabic
+                update_greetings("مرحباً بك أيها الزائر","أنا جورج كارابيسس","شكراً لزيارتك", lang); //arabic
             }
         }, 
     5000);
