@@ -6,11 +6,11 @@
             <p>My main job is to (explain, explain, explain)</p>
             <p>(add some photos and explain your position further)</p> --}}
             <h1 style="text-align:center">Joining the Efforts to Slow the Spread!</h1>
-            <p>I was looking forward to be part in the efforts to help during the pandemic crisis.</p>
+            <p>I was looking forward being part in the efforts to help during the pandemic crisis.</p>
 
-            <p>While I took part in a Hackathon, I came up with the idea of producing a website called <a href="https://project-protectus.com/">Project-protectUs</a> which alow 3D printer enthusiasts to visit the website and print the PPE designs which would be listed there and ship them to hospitals at a very low cost.</p>
+            <p>While I took part in a Hackathon, I came up with the idea of producing a website called <a href="https://project-protectus.com/">Project-protectUs</a> which allows 3D printer enthusiasts to visit the website and print the PPE designs which would be listed there and ship them to hospitals at a very low cost.</p>
 
-            <p>While it was nota very successful project due to lots of regulations as well as the pandemic was seemed to end during the summer, I joined another hackathon under the name of "Hack 4 The People" with an enthusiastic team to build an app which will help you stay more protected whiile going out.</p>
+            <p>While it was not a very successful project due to lots of regulations as well as the pandemic was seemed to end during the summer, I joined another hackathon under the name of "Hack 4 The People" with an enthusiastic team to build an app which will help you stay more protected while going out.</p>
 
             <p>Me and my new team are planning to use Project-protectUs to provide PPE for countries in Africa.</p>
 

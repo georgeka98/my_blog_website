@@ -5,9 +5,9 @@
             {{-- <h1>A Galactic game. </h1>
             <p>Describe</p> --}}
             <h1 style="text-align: center">Your Skills will be Strained</h1>
-            <p>My facination of games, started from a very young age, specifically at 4.</p>
+            <p>My fascination of games, started from a very young age, specifically at 4.</p>
 
-            <p>While I was practicing with 3D modeling as well as the Unity 3D game engine, I was approached by a Discord team on a Facebook Group with an invitation to join as an artist. I happily accepted.</p>
+            <p>While I was practicing with 3D modelling as well as the Unity 3D game engine, I was approached by a Discord team on a Facebook Group with an invitation to join as an artist. I happily accepted.</p>
 
             <p>While I was part in the team of 9 members, I met people from around the globe. Everyone had different skillsets while I took the role of a 3D artist.</p>
 
