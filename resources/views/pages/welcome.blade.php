@@ -42,7 +42,7 @@
   @endif
 
         {{-- <div class="about-section jumbotron"> --}}
-            <h1>Get to know me!</h1>
+            <h1>Get to know me!!</h1>
             <p>I'm a Greek student, currently studying Computer Science and Artificial Intelligence at the University of Edinburgh.</p>
             <p>I was born in London, hence also holding a British Citizenship, from Greek parents. At 4, we moved to Greece to be closer with my grandparents and I grew up in the south of Athens. At 16, me and my parents moved to Kent and I completed my higher education (A Levels), where I eventually moved to Edinburgh to study Computer Science & Artificial Intelligence.</p>
             <p>During my study, I explored multiple things, including being part of multiple student societies, such as <a href="#">HypEd</a>, a student lead project based at the University of Edinburgh with aim to create the first Hyperloop transportation system in the UK, volunteered as a student representative in my 2nd year and being accepted to J.P. Morgan Spring week programme full of activities and work shadowing.</p>
